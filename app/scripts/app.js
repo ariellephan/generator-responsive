@@ -1,6 +1,6 @@
 /*global define */
-define([], function () {
-    'use strict';
-
-    return 'Responsive jCarousel';
+define(["jquery","jquery.jcarousel"], function ($) {
+    $(function() {
+        $('body').jcarousel();
+    });
 });

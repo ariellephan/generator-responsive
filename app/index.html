@@ -13,8 +13,14 @@
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/style.css">
         <!-- endbuild -->
+
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+        <!-- build:js scripts/main.js -->
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
         <!-- endbuild -->
     </head>
     <body>
@@ -23,6 +29,22 @@
                 <div class="hero-unit">
                     <h1>Responsive jCarousel</h1>
                 </div>
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="images/tire_Invo.png" width="480" height="256" alt=""></li>
+                        <li><img src="images/tire_NeoGen.png" width="480" height="256" alt=""></li>
+                        <li><img src="images/tire_NT05.png" width="480" height="256" alt=""></li>
+                        <li><img src="images/tire_NT420S.png" width="480" height="256" alt=""></li>
+                        <li><img src="images/tire_NT555.png" width="480" height="256" alt=""></li>
+                        <li><img src="images/tire_NT830.png" width="480" height="256" alt=""></li>
+                        <li><img src="images/tire_Terra.png" width="480" height="256" alt=""></li>                        
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                
+                <p class="jcarousel-pagination">
 
             </div>
         </div>
@@ -32,8 +54,5 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- build:js scripts/main.js -->
-        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
-        <!-- endbuild -->
 </body>
 </html>
