@@ -313,13 +313,13 @@
         _reload: function() {
             this.vertical = this.options('vertical');
 
-            if (this.vertical == null) {
+            if (this.vertical === null) {
                 this.vertical = this.list().height() > this.list().width();
             }
 
             this.rtl = this.options('rtl');
 
-            if (this.rtl == null) {
+            if (this.rtl === null) {
                 this.rtl = (function(element) {
                     if (('' + element.attr('dir')).toLowerCase() === 'rtl') {
                         return true;
@@ -1066,7 +1066,7 @@
                 perPage = perPage.call(this);
             }
 
-            if (perPage == null) {
+            if (perPage === null) {
                 this._pages = this._calculatePages();
             } else {
                 var pp    = parseInt(perPage, 10) || 0,
