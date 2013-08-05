@@ -1,4 +1,4 @@
-requirejs.config({
+require.config({
     "paths": {
       "app": "../app",
       "jquery": '../bower_components/jquery/jquery',
@@ -8,4 +8,4 @@ requirejs.config({
         "jquery.jcarousel": ["jquery"]
     }
 });
-requirejs(["app/main"]);
+require(['app']);
