@@ -181,11 +181,16 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        // not used since Uglify task does concat,
-        // but still available if needed
-        /*concat: {
-            dist: {}
-        },*/
+        // concat: { 
+        //   // js: {
+        //   //   src: 'src/js/*.js',
+        //   //   dest: 'dest/js/concat.js'
+        //   // },
+        //     css: {
+        //         src: '.tmp/styles/*.css',
+        //         dest: 'dist/styles/main.css'
+        //     }
+        // },
         requirejs: {
             dist: {
                 // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
@@ -321,6 +326,7 @@ module.exports = function (grunt) {
         concurrent: {
             server: [
                 'compass',
+                'copy:styles',
                 'coffee:dist',
                 'copy:styles'
             ],
