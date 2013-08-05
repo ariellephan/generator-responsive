@@ -1,5 +1,7 @@
+'use strict';
+
 define(['jquery', 'jcarousel'], function($) {
-    $(document).ready(function() {
+    $(function() {
 		$('#myjcarousel').jcarousel({
 			wrap: 'circular'
 		});
